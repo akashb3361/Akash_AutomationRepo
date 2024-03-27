@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="174.292" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Add to Cart functionality" name="1 Adding a “Monitor” Item in Cart and verifying sub total - Example #1.1" time="57.281">
+<system-out><![CDATA[
+Given user open Amazon homePage.............................................passed
+When user enters "Monitor" in the searchBox.................................passed
+And clicks on search submit button..........................................passed
+And selects the "1st" item in the result list...............................passed
+And adds selected "Monitor" into cart.......................................passed
+And user opens cart menu....................................................passed
+Then verify that item's productPage price should match with cartPage price..passed
+And verify that product page subtotal should match with cart page subtotal..passed
+]]></system-out>
+</testcase>
+<testcase classname="Add to Cart functionality" name="2 Adding a “Laptop” Item in Cart and verifying sub total - Example #1.1" time="38.371">
+<system-out><![CDATA[
+Given user open Amazon homePage.............................................passed
+When user enters "Laptop" in the searchBox..................................passed
+And clicks on search submit button..........................................passed
+And selects the "2nd" item in the result list...............................passed
+And adds selected "Laptop" into cart........................................passed
+And user opens cart menu....................................................passed
+Then verify that item's productPage price should match with cartPage price..passed
+And verify that product page subtotal should match with cart page subtotal..passed
+]]></system-out>
+</testcase>
+<testcase classname="Add to Cart functionality" name="3 Adding two items in Cart and verifying sub total - Example #1.1" time="78.355">
+<system-out><![CDATA[
+Given user open Amazon homePage.............................................passed
+When user enters "Headphones" in the searchBox..............................passed
+And clicks on search submit button..........................................passed
+And selects the "1st" item in the result list...............................passed
+And adds selected "Headphones" into cart....................................passed
+When user enters "Keyboard" in the searchBox................................passed
+And selects the "1st-keyboard" item in the result list......................passed
+And adds selected "Keyboard" into cart......................................passed
+And user opens cart menu for multiple items added...........................passed
+Then verify that for each item productPage price should match with cartPage price.passed
+And verify that for each item product page subtotal should match with cart page subtotal.passed
+]]></system-out>
+</testcase>
+</testsuite>
